@@ -2,12 +2,16 @@ using UnityEngine;
 
 public class CursorController : MonoBehaviour 
 {
-    [SerializeField]
-    private CursorDatabase _cursors;
+    private RoomController _room;
 
-    void Start()
+    void Awake()
     {
-        SetCursor(_cursors.Current);
+        _room = GetComponentInParent<RoomController>();
+    }
+
+    void OnEnable()
+    {
+        SetCursor(_room.Cursor.Current);
     }
 
     public void Update()
@@ -18,7 +22,7 @@ public class CursorController : MonoBehaviour
         }
     }
 
-    public void NextIcon() => SetCursor(_cursors.Next());
+    public void NextIcon() => SetCursor(_room.Cursor.Next());
 
     private void SetCursor(CursorData cursor)
     {
