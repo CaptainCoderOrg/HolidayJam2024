@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79817d8ff4bd844999496e56dacf677, type: 3}
   m_Name: NoseCursor
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <DefaultVerb>k__BackingField: Smell
   <CursorImage>k__BackingField: {fileID: 2800000, guid: 3ae2e7e5c56624f47b9f0a1369107c02, type: 3}

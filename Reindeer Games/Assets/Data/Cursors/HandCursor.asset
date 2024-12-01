@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79817d8ff4bd844999496e56dacf677, type: 3}
   m_Name: HandCursor
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <DefaultVerb>k__BackingField: Pick up
   <CursorImage>k__BackingField: {fileID: 2800000, guid: b489e462a53cfec4d9c0f6644e417239, type: 3}

@@ -11,7 +11,12 @@ public class CursorController : MonoBehaviour
 
     void OnEnable()
     {
-        SetCursor(_room.Cursor.Current);
+        _room.Cursor.OnChange += SetCursor;
+    }
+
+    void OnDisable()
+    {
+        _room.Cursor.OnChange -= SetCursor;
     }
 
     public void Update()
@@ -22,7 +27,7 @@ public class CursorController : MonoBehaviour
         }
     }
 
-    public void NextIcon() => SetCursor(_room.Cursor.Next());
+    public void NextIcon() => _room.Cursor.Next();
 
     private void SetCursor(CursorData cursor)
     {

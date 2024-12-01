@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79817d8ff4bd844999496e56dacf677, type: 3}
   m_Name: EyeCursor
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <DefaultVerb>k__BackingField: Look at
   <CursorImage>k__BackingField: {fileID: 2800000, guid: efb48359cc348ac45a523c2c9e238e50, type: 3}

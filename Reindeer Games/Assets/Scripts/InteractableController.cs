@@ -10,6 +10,8 @@ public class InteractableController : MonoBehaviour
     private Vector3 _defaultScale;
     private Vector3 _hoverScale;
     private MouseEvents _mouseEvents;
+    [field: SerializeField]
+    public string Name { get; private set; }
     public List<CursorEntry> Interactions;
     
 
