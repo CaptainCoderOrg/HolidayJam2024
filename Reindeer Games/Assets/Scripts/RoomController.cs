@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RoomController : MonoBehaviour 
@@ -7,6 +8,16 @@ public class RoomController : MonoBehaviour
     public CursorDatabase Cursor { get; private set; }
     [SerializeField]
     private ScreenTextData _actionText;
+    private InteractableController _interactable;
+    public InteractableController Iteractabe 
+    {
+        get => _interactable;
+        set
+        {
+            _interactable = value;
+            UpdateActionText(Cursor.Current);
+        }
+    }
 
     void OnEnable()
     {
@@ -20,6 +31,6 @@ public class RoomController : MonoBehaviour
 
     private void UpdateActionText(CursorData data)
     {
-        _actionText.Text = data.DefaultVerb;
+        _actionText.Text = $"{data.DefaultVerb} {_interactable?.Name}";
     }
 }
