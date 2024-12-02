@@ -219,6 +219,9 @@ GameObject:
   - component: {fileID: 93045974}
   - component: {fileID: 93045973}
   - component: {fileID: 93045975}
+  - component: {fileID: 93045977}
+  - component: {fileID: 93045976}
+  - component: {fileID: 93045978}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -324,6 +327,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!225 &93045976
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93045970}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &93045977
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93045970}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a4685e765044462a95838b51c438ed3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &93045978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93045970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4ee09731b44419d8c1fe753691231b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnShow:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 93045977}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Show
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &257223596
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +896,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5113703074584361431, guid: 38dbee0c39dcd1c439e08971b303dbc6, type: 3}
   m_PrefabInstance: {fileID: 1638874398148315525}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1056986951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056986947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4ee09731b44419d8c1fe753691231b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnShow:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1153159064 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3219082267077365429, guid: 38dbee0c39dcd1c439e08971b303dbc6, type: 3}
@@ -1203,7 +1282,7 @@ PrefabInstance:
     - target: {fileID: 2029200613904392444, guid: 38dbee0c39dcd1c439e08971b303dbc6, type: 3}
       propertyPath: _textPanel
       value: 
-      objectReference: {fileID: 1056986947}
+      objectReference: {fileID: 1056986951}
     - target: {fileID: 2029200613904392444, guid: 38dbee0c39dcd1c439e08971b303dbc6, type: 3}
       propertyPath: _screenText
       value: 
@@ -1295,7 +1374,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5113703074584361431, guid: 38dbee0c39dcd1c439e08971b303dbc6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1056986951}
   m_SourcePrefab: {fileID: 100100000, guid: 38dbee0c39dcd1c439e08971b303dbc6, type: 3}
 --- !u!222 &1812691055370864236
 CanvasRenderer:
@@ -1340,7 +1422,7 @@ MonoBehaviour:
   _shadowLabel: {fileID: 2745605639928540879}
   _textLabel: {fileID: 7774385578137615240}
   _screenText: {fileID: 11400000, guid: e71015fd821e04677bdaf33aeb295fd4, type: 2}
-  _textPanel: {fileID: 93045970}
+  _textPanel: {fileID: 93045978}
   Delay: 0.01
   DisplayDuration: 3
   _previewText: Some preview text

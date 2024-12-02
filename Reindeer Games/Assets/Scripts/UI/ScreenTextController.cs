@@ -12,7 +12,7 @@ public class ScreenTextController : MonoBehaviour
     [SerializeField]
     private ScreenTextData _screenText;
     [SerializeField]
-    private GameObject _textPanel;
+    private Showable _textPanel;
 
     public float Delay = 0;
     public float DisplayDuration = 0;
@@ -31,18 +31,12 @@ public class ScreenTextController : MonoBehaviour
     {
         if (text == string.Empty)
         {
-            _textPanel.SetActive(false);
+            _textPanel.gameObject.SetActive(false);
             return;
         }
-        
+        _textPanel.Show();
         _shadowLabel.text = text;
         _textLabel.text = text;
-        _textPanel.SetActive(true);
-        if (_textPanel.TryGetComponent<ContentSizeFitter>(out var fitter))
-        {
-            fitter.verticalFit = ContentSizeFitter.FitMode.Unconstrained;
-            fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
-        }
         if (Delay > 0)
         {
             StopAllCoroutines();
@@ -50,6 +44,7 @@ public class ScreenTextController : MonoBehaviour
         }
         else
         {
+            _textPanel.Show();
             StopAllCoroutines();
             StartCoroutine(ClearTextAfter(DisplayDuration));
         }
@@ -71,7 +66,7 @@ public class ScreenTextController : MonoBehaviour
     {
         if (delay == 0) { yield break; }
         yield return new WaitForSeconds(delay);
-        _textPanel.SetActive(false);
+        _textPanel.gameObject.SetActive(false);
     }
 
     #if UNITY_EDITOR
