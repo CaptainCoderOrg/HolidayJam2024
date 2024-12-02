@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class RoomController : MonoBehaviour
     public CursorDatabase Cursor { get; private set; }
     [SerializeField]
     private ScreenTextData _actionText;
+    [field: SerializeField]
+    public ScreenTextData InteractionText { get; private set; }
     private InteractableController _interactable;
     public InteractableController Iteractabe 
     {
@@ -17,6 +20,11 @@ public class RoomController : MonoBehaviour
             _interactable = value;
             UpdateActionText(Cursor.Current);
         }
+    }
+
+    void Awake()
+    {
+        InteractionText.Text = string.Empty;
     }
 
     void OnEnable()
@@ -31,6 +39,11 @@ public class RoomController : MonoBehaviour
 
     private void UpdateActionText(CursorData data)
     {
-        _actionText.Text = $"{data.DefaultVerb} {_interactable?.Name}";
+        string verb = data.DefaultVerb;
+        if (_interactable?.VerbOverrides.FirstOrDefault(v => v.Cursor == data) is VerbOverride verbOverride)
+        {
+            verb = verbOverride.Verb;
+        }
+        _actionText.Text = $"{verb} {_interactable?.Name}";
     }
 }

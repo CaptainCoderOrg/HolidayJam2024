@@ -13,7 +13,7 @@ public class ScreenTextData : ScriptableObject
         get => _text;
         set
         {
-            _text = value;
+            _text = value.Trim();
             _onChange?.Invoke(_text);
         }
     }

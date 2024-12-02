@@ -12,7 +12,9 @@ public class InteractableController : MonoBehaviour
     private MouseEvents _mouseEvents;
     [field: SerializeField]
     public string Name { get; private set; }
+    public List<CursorDialogue> Dialogues;
     public List<CursorEntry> Interactions;
+    public List<VerbOverride> VerbOverrides;
     
 
     void Awake()
@@ -59,12 +61,25 @@ public class InteractableController : MonoBehaviour
 
     public void PerformClick(CursorData cursor)
     {
+        foreach (CursorDialogue dialogue in Dialogues.Where(c => cursor == c.Cursor))
+        {
+            _room.InteractionText.Text = dialogue.Dialogue;
+        }
         foreach (CursorEntry entry in Interactions.Where(c => cursor == c.Cursor))
         {
             entry.Event.Invoke();
         }
     }
 }
+
+[Serializable]
+public class CursorDialogue
+{
+    public CursorData Cursor;
+    [TextArea(1, 5)]
+    public string Dialogue;
+}
+
 
 [Serializable]
 public class CursorEntry
