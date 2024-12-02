@@ -46,14 +46,13 @@ public class InteractableController : MonoBehaviour
     public void HandleMouseEnter()
     {
         // transform.localScale = _hoverScale;
-        _room.Iteractabe = this;
+        _room.Interactable = this;
     }
 
     public void HandleMouseExit()
     {
         // transform.localScale = _defaultScale;
-        if (_room.Iteractabe == this) { _room.Iteractabe = null; }
-        _room.InteractionText.Clear();
+        if (_room.Interactable == this) { _room.Interactable = null; }
     }
 
     public void HandleClick()

@@ -12,7 +12,7 @@ public class RoomController : MonoBehaviour
     [field: SerializeField]
     public ScreenTextData InteractionText { get; private set; }
     private InteractableController _interactable;
-    public InteractableController Iteractabe 
+    public InteractableController Interactable 
     {
         get => _interactable;
         set

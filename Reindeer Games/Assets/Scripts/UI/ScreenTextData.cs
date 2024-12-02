@@ -1,5 +1,6 @@
 #if UNITY_EDITOR
 using System;
+using System.Collections;
 using UnityEditor;
 #endif
 using UnityEngine;
@@ -37,6 +38,8 @@ public class ScreenTextData : ScriptableObject
     {
         Text = string.Empty;
     }
+
+    public bool IsClear => Text == null || Text.Trim().Length == 0;
 
 #if UNITY_EDITOR
     void OnValidate()

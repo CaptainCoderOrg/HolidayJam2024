@@ -19,8 +19,14 @@ public class CursorController : MonoBehaviour
         _room.Cursor.OnChange -= SetCursor;
     }
 
+    private readonly YieldInstruction Wait = new WaitForFixedUpdate();
+
     public void Update()
     {
+        if (Input.GetMouseButtonUp(0) && _room.Interactable == null)
+        {
+            _room.InteractionText.Clear();
+        }
         if (Input.GetMouseButtonDown(1))
         {
             NextIcon();
