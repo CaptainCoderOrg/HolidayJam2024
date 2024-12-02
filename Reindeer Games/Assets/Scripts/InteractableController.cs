@@ -9,6 +9,7 @@ public class InteractableController : MonoBehaviour
     private RoomController _room;
     private Vector3 _defaultScale;
     private Vector3 _hoverScale;
+    [field: SerializeField]
     private MouseEvents _mouseEvents;
     [field: SerializeField]
     public string Name { get; private set; }
@@ -52,6 +53,7 @@ public class InteractableController : MonoBehaviour
     {
         // transform.localScale = _defaultScale;
         if (_room.Iteractabe == this) { _room.Iteractabe = null; }
+        _room.InteractionText.Clear();
     }
 
     public void HandleClick()

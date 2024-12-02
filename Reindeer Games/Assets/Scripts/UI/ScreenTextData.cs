@@ -1,4 +1,5 @@
 #if UNITY_EDITOR
+using System;
 using UnityEditor;
 #endif
 using UnityEngine;
@@ -30,6 +31,11 @@ public class ScreenTextData : ScriptableObject
         {
             _onChange -= value;
         }
+    }
+
+    public void Clear()
+    {
+        Text = string.Empty;
     }
 
 #if UNITY_EDITOR
