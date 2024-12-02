@@ -47,5 +47,8 @@ TagManager:
   - name: Interactables
     uniqueID: 3777328859
     locked: 0
+  - name: Particles
+    uniqueID: 2214625417
+    locked: 0
   m_RenderingLayers:
   - Default
