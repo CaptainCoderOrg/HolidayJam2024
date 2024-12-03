@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class CursorController : MonoBehaviour 
@@ -7,6 +8,13 @@ public class CursorController : MonoBehaviour
     void Awake()
     {
         _room = GetComponentInParent<RoomController>();
+        StartCoroutine(SetCursorAfterMoment());
+    }
+
+    private IEnumerator SetCursorAfterMoment()
+    {
+        yield return new WaitForSeconds(1);
+        SetCursor(_room.Cursor.Current);
     }
 
     void OnEnable()
