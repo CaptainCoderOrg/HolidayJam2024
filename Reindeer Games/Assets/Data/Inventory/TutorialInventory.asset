@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05599bc307e3db842aae00ed66aaded2, type: 3}
   m_Name: TutorialInventory
   m_EditorClassIdentifier: 
-  <Items>k__BackingField:
+  <StartingItems>k__BackingField:
   - {fileID: 11400000, guid: 6bfdf6a6993172b469ff314915f1bfe3, type: 2}
   - {fileID: 11400000, guid: 660613b24c2145240a85e60a22926e02, type: 2}
   - {fileID: 11400000, guid: 1e21b88f81c069248a1e638bf090f751, type: 2}
+  <Items>k__BackingField: []

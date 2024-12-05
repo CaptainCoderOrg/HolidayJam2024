@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -8,6 +10,8 @@ using UnityEditor;
 [CreateAssetMenu(menuName = "Inventory/Inventory")]
 public class InventoryData : ScriptableObject
 {
+    [field: SerializeField]
+    public List<InventoryItemData> StartingItems { get; private set; }
     [field: SerializeField]
     public List<InventoryItemData> Items { get; private set; }
     private event System.Action<List<InventoryItemData>> _onItemsModified;
@@ -51,9 +55,15 @@ public class InventoryData : ScriptableObject
 
     private void OnPlayModeStateChange(PlayModeStateChange change)
     {
+        if (change is PlayModeStateChange.EnteredPlayMode)
+        {
+            Items = StartingItems.ToList();
+            _onItemsModified.Invoke(Items);
+        }
         if (change is PlayModeStateChange.ExitingPlayMode)
         {
             _onItemsModified = null;
+            Items.Clear();
         }
     }
 #endif
