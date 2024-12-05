@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class InteractableController : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class InteractableController : MonoBehaviour
 
     public void HandleMouseEnter()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) { return; }
         // transform.localScale = _hoverScale;
         _room.Interactable = this;
     }
@@ -57,6 +59,11 @@ public class InteractableController : MonoBehaviour
 
     public void HandleClick()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) { return; }
+        if (!_room.InteractionText.IsClear) 
+        {
+            _room.InteractionText.Clear();
+        }
         PerformClick(_room.Cursor.Current);
     }
 

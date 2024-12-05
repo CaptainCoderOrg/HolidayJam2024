@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 09575abab112f4d45ba08772e65d57fd
+guid: 64db469e627cbc348a07f0ffa32cabda
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2419835134307788539
-    second: button_square_gradient_0
+      213: 5689378029522759628
+    second: stocking-red_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_square_gradient_0
+      name: stocking-red_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 204
+        height: 358
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 509139424c40b6ed0800000000000000
-      internalID: -2419835134307788539
+      spriteID: ccfad9a9c2bb4fe40800000000000000
+      internalID: 5689378029522759628
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_square_gradient_0: -2419835134307788539
+      stocking-red_0: 5689378029522759628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: -517638437
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1095141833252711340, guid: 10d38c0c1bd336d4198916aa0a028780, type: 3}
+  m_Sprite: {fileID: -7524341903146727432, guid: 46525095e568344afb7b77e2741b1483, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,7 +119,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -127,7 +127,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 0.86}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 3, y: 0.86}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -135,47 +135,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.48, y: -0.39}
-      - {x: 0.87, y: -0.42999998}
-      - {x: 0.90999997, y: -0.37}
-      - {x: 0.95, y: -0.16}
-      - {x: 1.04, y: -0.22}
-      - {x: 1.03, y: -0.39999998}
-      - {x: 1.06, y: -0.42999998}
-      - {x: 1.28, y: -0.42999998}
-      - {x: 1.4, y: -0.34}
-      - {x: 1.5, y: -0.14999999}
-      - {x: 1.5, y: 0.089999996}
-      - {x: 1.43, y: 0.22}
-      - {x: 1.36, y: 0.26999998}
-      - {x: 0.81, y: 0.25}
-      - {x: 0.14, y: 0.21}
-      - {x: -0.53, y: 0.16}
-      - {x: -0.53999996, y: 0.24}
-      - {x: -0.64, y: 0.42}
-      - {x: -0.7, y: 0.42999998}
-      - {x: -1.0699999, y: 0.42999998}
-      - {x: -1.18, y: 0.37}
-      - {x: -1.4599999, y: 0.11}
-      - {x: -1.5, y: 0.02}
-      - {x: -1.5, y: -0.22}
-      - {x: -1.43, y: -0.31}
-      - {x: -1.38, y: -0.35999998}
-      - {x: -1.17, y: -0.42999998}
-      - {x: -0.64, y: -0.42999998}
-      - {x: -0.53999996, y: -0.35}
-      - {x: -0.48999998, y: -0.17999999}
-      - {x: 0.53, y: -0.21}
-    - - {x: -1.1899999, y: -0.16}
-      - {x: -1.24, y: -0.06}
-      - {x: -1.23, y: -0.049999997}
-      - {x: -1.14, y: 0.049999997}
-      - {x: -1.09, y: 0.08}
-      - {x: -0.98999995, y: 0.08}
-      - {x: -0.84999996, y: -0.04}
-      - {x: -0.89, y: -0.13}
-      - {x: -1, y: -0.17}
-      - {x: -1.01, y: -0.17999999}
+    - - {x: -0.12, y: 0.16}
+      - {x: -0.16, y: 0.14999999}
+      - {x: -0.16, y: -0.16}
+      - {x: 0.13, y: -0.16}
+      - {x: 0.16, y: -0.14999999}
+      - {x: 0.16, y: 0.12}
+      - {x: 0.11, y: 0.16}
   m_UseDelaunayMesh: 0
 --- !u!114 &3240791239223619264
 MonoBehaviour:
@@ -253,7 +219,7 @@ GameObject:
   - component: {fileID: 5287650711025758227}
   - component: {fileID: 8969678914368781827}
   m_Layer: 0
-  m_Name: Key (Interactable)
+  m_Name: Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,7 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0555299e5577244b310312431cfc53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 
+  _mouseEvents: {fileID: 0}
+  <Name>k__BackingField: Unnamed
   Dialogues: []
   Interactions: []
   VerbOverrides: []
