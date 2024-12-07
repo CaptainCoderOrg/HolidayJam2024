@@ -6607,12 +6607,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 17f6e872f98096a4cbe5ce035a9ba3c8, type: 3}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: <Name>k__BackingField
       value: Sue's Stocking
       objectReference: {fileID: 0}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[0].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[1].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[2].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[2].Dialogue
+      value: Excellent! Sue really could use a new stocking anyway.
       objectReference: {fileID: 0}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.data[0].Cursor
@@ -6669,7 +6689,7 @@ PrefabInstance:
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: d96841dc1938e0b44bb6b90f6e65344d, type: 2}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: InventoryItemData, Assembly-CSharp
@@ -7056,12 +7076,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 64db469e627cbc348a07f0ffa32cabda, type: 3}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: <Name>k__BackingField
       value: Jeff's Stocking
       objectReference: {fileID: 0}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[0].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[1].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[2].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[2].Dialogue
+      value: Excellent! Jeff really could use a new stocking anyway.
       objectReference: {fileID: 0}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.data[0].Cursor
@@ -19728,6 +19768,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[0].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
+      propertyPath: Dialogues.Array.data[1].Cursor
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
+    - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Dialogues.Array.data[2].Cursor
       value: 
       objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
@@ -19790,7 +19838,7 @@ PrefabInstance:
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: d96841dc1938e0b44bb6b90f6e65344d, type: 2}
     - target: {fileID: 6090943179813213604, guid: 8740dfe4069d919449f5c1f289c616d7, type: 3}
       propertyPath: Interactions.Array.data[0].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: InventoryItemData, Assembly-CSharp
