@@ -11,6 +11,8 @@ public class CursorData : ScriptableObject
 {
     [field: SerializeField]
     public CursorActionData ItemCursorAction { get; private set; }
+    [field: SerializeField]
+    public InventoryData Inventory { get; private set; }
     
     private event System.Action<CursorActionData> _onChange;
     public event System.Action<CursorActionData> OnChange
@@ -64,6 +66,17 @@ public class CursorData : ScriptableObject
         }
     }
     public bool IsItemSelected => SelectedItem != null;
+
+    public void DestroySelected()
+    {
+        if (!IsItemSelected) 
+        { 
+            Debug.LogError($"Attempted to Destroy Selected but no item was selected");
+            return;
+        }
+        Inventory.RemoveItem(SelectedItem);
+        SelectedItem = null;
+    }
 
     public CursorActionData SetCursorAction(CursorActionData cursorAction)
     {

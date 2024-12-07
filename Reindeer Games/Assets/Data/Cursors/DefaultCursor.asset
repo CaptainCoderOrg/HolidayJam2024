@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DefaultCursor
   m_EditorClassIdentifier: 
   <ItemCursorAction>k__BackingField: {fileID: 11400000, guid: 8eb14f017c77e804a889af46fe1a2b4b, type: 2}
+  <Inventory>k__BackingField: {fileID: 11400000, guid: 5ccd363c7ed40f74d87ece0cf4ff9d01, type: 2}
   _cursors:
   - {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
   - {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}

@@ -68,7 +68,7 @@ public class InteractableController : MonoBehaviour
 
     public void PerformClick(CursorData cursor)
     {
-        CursorDialogue dialogue = Dialogues.FirstOrDefault(c => cursor.CurrentAction == c.CursorAction);
+        CursorDialogue dialogue = Dialogues.FirstOrDefault(c => cursor.CurrentAction == c.CursorAction && c.Predicates.All(p => p.IsMet(cursor)));
         if (dialogue != null)
         {
             _room.InteractionText.Text = dialogue.Dialogue;
@@ -76,7 +76,7 @@ public class InteractableController : MonoBehaviour
         //  ?? cursor.CurrentAction.DefaultMessages.GetRandom();
         // _room.InteractionText.Text = message;
         int count = 0;
-        foreach (CursorEntry entry in Interactions.Where(c => cursor.CurrentAction == c.CursorAction))
+        foreach (CursorEntry entry in Interactions.Where(c => cursor.CurrentAction == c.CursorAction && c.Predicates.All(p => p.IsMet(cursor))))
         {
             entry.Event.Invoke();
             count++;
@@ -90,11 +90,14 @@ public class InteractableController : MonoBehaviour
     }
 }
 
+
+
 [Serializable]
 public class CursorDialogue
 {
     [FormerlySerializedAs("Cursor")]
     public CursorActionData CursorAction;
+    public List<Predicate> Predicates;
     [TextArea(1, 5)]
     public string Dialogue;
 }
@@ -105,5 +108,6 @@ public class CursorEntry
 {
     [FormerlySerializedAs("Cursor")]
     public CursorActionData CursorAction;
+    public List<Predicate> Predicates;
     public UnityEvent Event;
 }
