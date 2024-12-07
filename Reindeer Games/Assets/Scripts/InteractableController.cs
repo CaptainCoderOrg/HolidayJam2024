@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 public class InteractableController : MonoBehaviour
 {
@@ -69,11 +70,11 @@ public class InteractableController : MonoBehaviour
 
     public void PerformClick(CursorActionData cursor)
     {
-        foreach (CursorDialogue dialogue in Dialogues.Where(c => cursor == c.Cursor))
+        foreach (CursorDialogue dialogue in Dialogues.Where(c => cursor == c.CursorAction))
         {
             _room.InteractionText.Text = dialogue.Dialogue;
         }
-        foreach (CursorEntry entry in Interactions.Where(c => cursor == c.Cursor))
+        foreach (CursorEntry entry in Interactions.Where(c => cursor == c.CursorAction))
         {
             entry.Event.Invoke();
         }
@@ -83,7 +84,8 @@ public class InteractableController : MonoBehaviour
 [Serializable]
 public class CursorDialogue
 {
-    public CursorActionData Cursor;
+    [FormerlySerializedAs("Cursor")]
+    public CursorActionData CursorAction;
     [TextArea(1, 5)]
     public string Dialogue;
 }
@@ -92,6 +94,7 @@ public class CursorDialogue
 [Serializable]
 public class CursorEntry
 {
-    public CursorActionData Cursor;
+    [FormerlySerializedAs("Cursor")]
+    public CursorActionData CursorAction;
     public UnityEvent Event;
 }
