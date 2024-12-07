@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class CursorDatabase : ScriptableObject
+public class CursorData : ScriptableObject
 {
     private event System.Action<CursorActionData> _onChange;
     public event System.Action<CursorActionData> OnChange

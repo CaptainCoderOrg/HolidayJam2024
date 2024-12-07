@@ -6,7 +6,7 @@ using UnityEngine;
 public class RoomController : MonoBehaviour 
 {
     [field: SerializeField]
-    public CursorDatabase Cursor { get; private set; }
+    public CursorData Cursor { get; private set; }
     [SerializeField]
     private ScreenTextData _actionText;
     [field: SerializeField]
