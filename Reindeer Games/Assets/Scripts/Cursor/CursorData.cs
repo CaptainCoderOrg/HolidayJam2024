@@ -4,6 +4,7 @@ using UnityEditor;
 
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.VisualScripting;
 
 [CreateAssetMenu]
 public class CursorData : ScriptableObject
@@ -22,10 +23,36 @@ public class CursorData : ScriptableObject
         }
     }
 
+    private event System.Action<InventoryItemData> _onSelectedItemChanged;
+    public event System.Action<InventoryItemData> OnSelectedItemChanged
+    {
+        add
+        {
+            _onSelectedItemChanged += value;
+            value.Invoke(SelectedItem);
+        }
+        remove
+        {
+            _onSelectedItemChanged -= value;
+        }
+    }
+
     private int _ix = 0;
     public CursorActionData CurrentAction => _cursors[_ix];
     [SerializeField]
     private List<CursorActionData> _cursors;
+    [SerializeField]
+    private InventoryItemData _selectedItem;
+    public InventoryItemData SelectedItem 
+    { 
+        get => _selectedItem;
+        set
+        {
+            _selectedItem = value;
+            _onSelectedItemChanged?.Invoke(_selectedItem);
+        }
+    }
+    public bool IsItemSelected => SelectedItem != null;
 
     public CursorActionData Next()
     {
@@ -49,9 +76,15 @@ public class CursorData : ScriptableObject
 
     private void OnPlayModeStateChanged(PlayModeStateChange state)
     {
+        if (state == PlayModeStateChange.EnteredPlayMode)
+        {
+            SelectedItem = null;
+        }
         if (state == PlayModeStateChange.ExitingPlayMode)
         {
+            SelectedItem = null;
             _onChange = null;
+            _onSelectedItemChanged = null;
         }
     }
 #endif

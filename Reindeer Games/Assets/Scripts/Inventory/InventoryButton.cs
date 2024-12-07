@@ -6,6 +6,8 @@ public class InventoryButton : MonoBehaviour
 {
     [field: SerializeField]
     public Image Image { get; private set; }
+    [field: SerializeField]
+    public CursorData Cursor { get; private set; }
     private InventoryItemData _item;
     public InventoryItemData Item 
     { 
@@ -23,6 +25,11 @@ public class InventoryButton : MonoBehaviour
                 Image.sprite = _item.Icon;
             }
         }
+    }
+
+    public void OnClick()
+    {
+        Cursor.SelectedItem = _item;
     }
 
     public void ClearItem()
