@@ -18,7 +18,7 @@ public class RoomController : MonoBehaviour
         set
         {
             _interactable = value;
-            UpdateActionText(Cursor.Current);
+            UpdateActionText(Cursor.CurrentAction);
         }
     }
 

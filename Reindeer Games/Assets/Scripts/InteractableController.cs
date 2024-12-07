@@ -65,16 +65,16 @@ public class InteractableController : MonoBehaviour
         {
             _room.InteractionText.Clear();
         }
-        PerformClick(_room.Cursor.Current);
+        PerformClick(_room.Cursor);
     }
 
-    public void PerformClick(CursorActionData cursor)
+    public void PerformClick(CursorData cursor)
     {
-        foreach (CursorDialogue dialogue in Dialogues.Where(c => cursor == c.CursorAction))
+        foreach (CursorDialogue dialogue in Dialogues.Where(c => cursor.CurrentAction == c.CursorAction))
         {
             _room.InteractionText.Text = dialogue.Dialogue;
         }
-        foreach (CursorEntry entry in Interactions.Where(c => cursor == c.CursorAction))
+        foreach (CursorEntry entry in Interactions.Where(c => cursor.CurrentAction == c.CursorAction))
         {
             entry.Event.Invoke();
         }

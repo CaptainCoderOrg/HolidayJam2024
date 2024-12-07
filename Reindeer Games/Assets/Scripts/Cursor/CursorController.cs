@@ -14,7 +14,7 @@ public class CursorController : MonoBehaviour
     private IEnumerator SetCursorAfterMoment()
     {
         yield return new WaitForSeconds(1);
-        SetCursor(_room.Cursor.Current);
+        SetCursor(_room.Cursor.CurrentAction);
     }
 
     void OnEnable()

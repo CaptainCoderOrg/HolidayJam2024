@@ -14,7 +14,7 @@ public class CursorData : ScriptableObject
         add
         {
             _onChange += value;
-            value.Invoke(Current);
+            value.Invoke(CurrentAction);
         }
         remove
         {
@@ -23,14 +23,14 @@ public class CursorData : ScriptableObject
     }
 
     private int _ix = 0;
-    public CursorActionData Current => _cursors[_ix];
+    public CursorActionData CurrentAction => _cursors[_ix];
     [SerializeField]
     private List<CursorActionData> _cursors;
 
     public CursorActionData Next()
     {
         _ix = (_ix + 1) % _cursors.Count;
-        _onChange?.Invoke(Current);
+        _onChange?.Invoke(CurrentAction);
         return _cursors[_ix];
     }
 
