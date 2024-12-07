@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
   <DefaultVerb>k__BackingField: Lick
+  <DefaultProposition>k__BackingField: 
   <CursorImage>k__BackingField: {fileID: 2800000, guid: cdbcf69b65f4f7a429cf0fa9d18391ec, type: 3}
+  <DefaultMessages>k__BackingField:
+  - It tastes like chicken!

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
   <DefaultVerb>k__BackingField: Pick up
+  <DefaultProposition>k__BackingField: 
   <CursorImage>k__BackingField: {fileID: 2800000, guid: b489e462a53cfec4d9c0f6644e417239, type: 3}
+  <DefaultMessages>k__BackingField:
+  - Keep your hands to yourself!

@@ -68,14 +68,25 @@ public class InteractableController : MonoBehaviour
 
     public void PerformClick(CursorData cursor)
     {
-        foreach (CursorDialogue dialogue in Dialogues.Where(c => cursor.CurrentAction == c.CursorAction))
+        CursorDialogue dialogue = Dialogues.FirstOrDefault(c => cursor.CurrentAction == c.CursorAction);
+        if (dialogue != null)
         {
             _room.InteractionText.Text = dialogue.Dialogue;
         }
+        //  ?? cursor.CurrentAction.DefaultMessages.GetRandom();
+        // _room.InteractionText.Text = message;
+        int count = 0;
         foreach (CursorEntry entry in Interactions.Where(c => cursor.CurrentAction == c.CursorAction))
         {
             entry.Event.Invoke();
+            count++;
         }
+
+        if (dialogue == null && count == 0)
+        {
+            _room.InteractionText.Text = cursor.CurrentAction.DefaultMessages.GetRandom();
+        }
+        
     }
 }
 

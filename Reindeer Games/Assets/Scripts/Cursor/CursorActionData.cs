@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -11,5 +12,7 @@ public class CursorActionData : ScriptableObject
     public string DefaultProposition { get; private set; } = string.Empty;
     [field: SerializeField]
     public Texture2D CursorImage { get; private set;}
+    [field: SerializeField]
+    public List<string> DefaultMessages { get; private set; }
 
 }

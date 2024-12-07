@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: 
   <DefaultVerb>k__BackingField: Smell
+  <DefaultProposition>k__BackingField: 
   <CursorImage>k__BackingField: {fileID: 2800000, guid: 3ae2e7e5c56624f47b9f0a1369107c02, type: 3}
+  <DefaultMessages>k__BackingField:
+  - You take a deep breath and immediately regret it.
