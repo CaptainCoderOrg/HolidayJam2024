@@ -37,7 +37,7 @@ public class RoomController : MonoBehaviour
         Cursor.OnChange -= UpdateActionText;
     }
 
-    private void UpdateActionText(CursorData data)
+    private void UpdateActionText(CursorActionData data)
     {
         string verb = data.DefaultVerb;
         if (_interactable?.VerbOverrides.FirstOrDefault(v => v.Cursor == data) is VerbOverride verbOverride)

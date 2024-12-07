@@ -43,7 +43,7 @@ public class CursorController : MonoBehaviour
 
     public void NextIcon() => _room.Cursor.Next();
 
-    private void SetCursor(CursorData cursor)
+    private void SetCursor(CursorActionData cursor)
     {
         Cursor.SetCursor(cursor.CursorImage, Vector2.zero, CursorMode.Auto);   
     }

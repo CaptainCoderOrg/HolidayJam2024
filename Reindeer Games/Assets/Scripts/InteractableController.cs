@@ -67,7 +67,7 @@ public class InteractableController : MonoBehaviour
         PerformClick(_room.Cursor.Current);
     }
 
-    public void PerformClick(CursorData cursor)
+    public void PerformClick(CursorActionData cursor)
     {
         foreach (CursorDialogue dialogue in Dialogues.Where(c => cursor == c.Cursor))
         {
@@ -83,7 +83,7 @@ public class InteractableController : MonoBehaviour
 [Serializable]
 public class CursorDialogue
 {
-    public CursorData Cursor;
+    public CursorActionData Cursor;
     [TextArea(1, 5)]
     public string Dialogue;
 }
@@ -92,6 +92,6 @@ public class CursorDialogue
 [Serializable]
 public class CursorEntry
 {
-    public CursorData Cursor;
+    public CursorActionData Cursor;
     public UnityEvent Event;
 }

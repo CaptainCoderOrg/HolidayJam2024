@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class CursorData : ScriptableObject
+public class CursorActionData : ScriptableObject
 {
     [field: SerializeField]
     public string Name { get; private set; }

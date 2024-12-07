@@ -8,8 +8,8 @@ using UnityEngine;
 [CreateAssetMenu]
 public class CursorDatabase : ScriptableObject
 {
-    private event System.Action<CursorData> _onChange;
-    public event System.Action<CursorData> OnChange
+    private event System.Action<CursorActionData> _onChange;
+    public event System.Action<CursorActionData> OnChange
     {
         add
         {
@@ -23,11 +23,11 @@ public class CursorDatabase : ScriptableObject
     }
 
     private int _ix = 0;
-    public CursorData Current => _cursors[_ix];
+    public CursorActionData Current => _cursors[_ix];
     [SerializeField]
-    private List<CursorData> _cursors;
+    private List<CursorActionData> _cursors;
 
-    public CursorData Next()
+    public CursorActionData Next()
     {
         _ix = (_ix + 1) % _cursors.Count;
         _onChange?.Invoke(Current);
