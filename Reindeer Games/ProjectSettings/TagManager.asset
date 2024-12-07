@@ -50,5 +50,8 @@ TagManager:
   - name: Particles
     uniqueID: 2214625417
     locked: 0
+  - name: CursorItem
+    uniqueID: 1363872213
+    locked: 0
   m_RenderingLayers:
   - Default

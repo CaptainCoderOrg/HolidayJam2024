@@ -1,15 +1,20 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CursorController : MonoBehaviour 
 {
     private RoomController _room;
+    [SerializeField]
+    private Image _selectedImage;
 
     void Awake()
     {
         _room = GetComponentInParent<RoomController>();
         StartCoroutine(SetCursorAfterMoment());
     }
+
 
     private IEnumerator SetCursorAfterMoment()
     {
@@ -20,14 +25,14 @@ public class CursorController : MonoBehaviour
     void OnEnable()
     {
         _room.Cursor.OnChange += SetCursor;
+        _room.Cursor.OnSelectedItemChanged += HandleSelectedItem;
     }
 
     void OnDisable()
     {
         _room.Cursor.OnChange -= SetCursor;
+        _room.Cursor.OnSelectedItemChanged -= HandleSelectedItem;
     }
-
-    private readonly YieldInstruction Wait = new WaitForFixedUpdate();
 
     public void Update()
     {
@@ -42,6 +47,17 @@ public class CursorController : MonoBehaviour
     }
 
     public void NextIcon() => _room.Cursor.Next();
+
+    private void HandleSelectedItem(InventoryItemData item)
+    {
+        if (item == null) 
+        { 
+            _selectedImage.gameObject.SetActive(false); 
+            return;
+        }
+        _selectedImage.sprite = item.Icon;
+        _selectedImage.gameObject.SetActive(true);
+    }
 
     private void SetCursor(CursorActionData cursor)
     {
