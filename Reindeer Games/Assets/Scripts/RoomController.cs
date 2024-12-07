@@ -41,11 +41,22 @@ public class RoomController : MonoBehaviour
     {
         string verb = data.DefaultVerb;
         string proposition = _interactable == null ? string.Empty : data.DefaultProposition;
-        if (_interactable?.VerbOverrides.FirstOrDefault(v => v.Cursor == data) is VerbOverride verbOverride)
+        if (_interactable?.VerbOverrides.FirstOrDefault(v => CheckVerbOverride(v, data)) is VerbOverride verbOverride)
         {
             verb = verbOverride.Verb;
+            if (verbOverride.Proposition != string.Empty)
+            {
+                proposition = verbOverride.Proposition;
+            }
+            
         }
         _actionText.Text = ReplaceVariables($"{verb} {proposition} {_interactable?.Name}", Cursor).Replace("  ", " ");
+    }
+
+    private bool CheckVerbOverride(VerbOverride v, CursorActionData data)
+    {
+        bool itemMatch = v.ItemMatch.Count == 0 || v.ItemMatch.Contains(Cursor.SelectedItem);
+        return itemMatch && v.Cursor == data;
     }
 
     private static string ReplaceVariables(string message, CursorData cursor)

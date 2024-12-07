@@ -19893,12 +19893,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: VerbOverrides.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: 'VerbOverrides.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: a6663827d88d46e48a62e44b9752ad59, type: 2}
+    - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
+      propertyPath: 'VerbOverrides.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: b75562831baf2bb4f8ac9e8b6007d261, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[0].Cursor
       value: 
