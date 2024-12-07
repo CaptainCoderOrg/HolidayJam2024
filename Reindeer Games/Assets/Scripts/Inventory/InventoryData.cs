@@ -10,6 +10,7 @@ using UnityEditor;
 [CreateAssetMenu(menuName = "Inventory/Inventory")]
 public class InventoryData : ScriptableObject
 {
+    private bool _initialized = false;
     [field: SerializeField]
     public List<InventoryItemData> StartingItems { get; private set; }
     [field: SerializeField]
@@ -42,12 +43,16 @@ public class InventoryData : ScriptableObject
         }
     }
 
-#if UNITY_EDITOR
     void OnEnable()
     {
-        EditorApplication.playModeStateChanged += OnPlayModeStateChange;
+        Items = StartingItems.ToList();
+        #if UNITY_EDITOR
+            EditorApplication.playModeStateChanged += OnPlayModeStateChange;
+        #endif
     }
 
+#if UNITY_EDITOR
+    
     void OnDisable()
     {
         EditorApplication.playModeStateChanged -= OnPlayModeStateChange;
