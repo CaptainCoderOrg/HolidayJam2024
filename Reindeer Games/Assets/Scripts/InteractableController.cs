@@ -10,7 +10,6 @@ public class InteractableController : MonoBehaviour
 {
     private RoomController _room;
     private Vector3 _defaultScale;
-    private Vector3 _hoverScale;
     [field: SerializeField]
     private MouseEvents _mouseEvents;
     [field: SerializeField]
@@ -18,14 +17,12 @@ public class InteractableController : MonoBehaviour
     public List<CursorDialogue> Dialogues;
     public List<CursorEntry> Interactions;
     public List<VerbOverride> VerbOverrides;
-    
 
     void Awake()
     {
         _room = GetComponentInParent<RoomController>();
         Debug.Assert(_room != null, "Interactable must be inside of a room");
         _defaultScale = transform.localScale;
-        _hoverScale = _defaultScale + new Vector3(.1f, .1f, .1f);
         _mouseEvents = GetComponentInChildren<MouseEvents>();
         Debug.Assert(_mouseEvents != null);
     }

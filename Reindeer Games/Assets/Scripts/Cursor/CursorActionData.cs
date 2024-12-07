@@ -8,6 +8,8 @@ public class CursorActionData : ScriptableObject
     [field: SerializeField]
     public string DefaultVerb { get; private set; }
     [field: SerializeField]
+    public string DefaultProposition { get; private set; } = string.Empty;
+    [field: SerializeField]
     public Texture2D CursorImage { get; private set;}
 
 }

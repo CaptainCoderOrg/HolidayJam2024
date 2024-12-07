@@ -1,9 +1,9 @@
+
+using UnityEngine;
+
 #if UNITY_EDITOR
-using System;
-using System.Collections;
 using UnityEditor;
 #endif
-using UnityEngine;
 
 [CreateAssetMenu]
 public class ScreenTextData : ScriptableObject
