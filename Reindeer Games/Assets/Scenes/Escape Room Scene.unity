@@ -20724,7 +20724,7 @@ MonoBehaviour:
   _screenText: {fileID: 11400000, guid: e71015fd821e04677bdaf33aeb295fd4, type: 2}
   _textPanel: {fileID: 93045978}
   Delay: 0.005
-  DisplayDuration: 5
+  DisplayDuration: 0
   _previewText: Some preview text
 --- !u!1 &2114112895460005706
 GameObject:

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Gift for Bob
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Gift for Bob
+  <Verb>k__BackingField: Put
   <Icon>k__BackingField: {fileID: 21300000, guid: 1bdfa79cc2c9b8e40bf4ae7ae1db3aac, type: 3}

@@ -64,6 +64,7 @@ public class InteractableController : MonoBehaviour
         if (!_room.InteractionText.IsClear) 
         {
             _room.InteractionText.Clear();
+            return;
         }
         PerformClick(_room.Cursor);
     }
