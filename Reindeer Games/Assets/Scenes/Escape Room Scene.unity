@@ -826,6 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c51cab746046bfa49a82f962fc08c9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Offset>k__BackingField: {x: 54, y: -54, z: 0}
 --- !u!114 &156749038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,7 +840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7490196}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9019608}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3258,7 +3259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37426ecbc8690854e8ed20b1cb8d6596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selectedImage: {fileID: 156749038}
+  <GenericCursor>k__BackingField: {fileID: 2800000, guid: 588d998fed5823345901c5517cfccfcd, type: 3}
 --- !u!4 &517076144
 Transform:
   m_ObjectHideFlags: 0
@@ -3618,6 +3619,7 @@ GameObject:
   - component: {fileID: 551935382}
   - component: {fileID: 551935381}
   - component: {fileID: 551935380}
+  - component: {fileID: 551935384}
   m_Layer: 5
   m_Name: SelectedItemCanvas
   m_TagString: Untagged
@@ -3708,6 +3710,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &551935384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551935379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5bb6038479d9d44b2679186011d6c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selectedImage: {fileID: 156749038}
+  _cursor: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
 --- !u!1001 &602095091
 PrefabInstance:
   m_ObjectHideFlags: 0

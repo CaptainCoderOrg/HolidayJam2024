@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20d09dcfd09f3914189b04c0c99428ce, type: 3}
-  m_Name: ExampleDatabase
+  m_Script: {fileID: 11500000, guid: d79817d8ff4bd844999496e56dacf677, type: 3}
+  m_Name: ItemCursorAction
   m_EditorClassIdentifier: 
-  _cursors:
-  - {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
-  - {fileID: 11400000, guid: da58fca4871c88345b977ef2fe448a04, type: 2}
+  <Name>k__BackingField: 
+  <DefaultVerb>k__BackingField: Use
+  <CursorImage>k__BackingField: {fileID: 2800000, guid: 588d998fed5823345901c5517cfccfcd, type: 3}

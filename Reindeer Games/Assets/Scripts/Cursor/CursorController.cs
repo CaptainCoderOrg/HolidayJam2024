@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class CursorController : MonoBehaviour 
 {
+    [field: SerializeField]
+    public Texture2D GenericCursor { get; private set; }
     private RoomController _room;
-    [SerializeField]
-    private Image _selectedImage;
 
     void Awake()
     {
@@ -25,13 +25,11 @@ public class CursorController : MonoBehaviour
     void OnEnable()
     {
         _room.Cursor.OnChange += SetCursor;
-        _room.Cursor.OnSelectedItemChanged += HandleSelectedItem;
     }
 
     void OnDisable()
     {
         _room.Cursor.OnChange -= SetCursor;
-        _room.Cursor.OnSelectedItemChanged -= HandleSelectedItem;
     }
 
     public void Update()
@@ -48,16 +46,6 @@ public class CursorController : MonoBehaviour
 
     public void NextIcon() => _room.Cursor.Next();
 
-    private void HandleSelectedItem(InventoryItemData item)
-    {
-        if (item == null) 
-        { 
-            _selectedImage.gameObject.SetActive(false); 
-            return;
-        }
-        _selectedImage.sprite = item.Icon;
-        _selectedImage.gameObject.SetActive(true);
-    }
 
     private void SetCursor(CursorActionData cursor)
     {

@@ -9,6 +9,9 @@ using Unity.VisualScripting;
 [CreateAssetMenu]
 public class CursorData : ScriptableObject
 {
+    [field: SerializeField]
+    public CursorActionData ItemCursorAction { get; private set; }
+    
     private event System.Action<CursorActionData> _onChange;
     public event System.Action<CursorActionData> OnChange
     {
@@ -50,13 +53,32 @@ public class CursorData : ScriptableObject
         {
             _selectedItem = value;
             _onSelectedItemChanged?.Invoke(_selectedItem);
+            if (_selectedItem == null)
+            {
+                Next();
+            }
+            else
+            {
+                SetCursorAction(ItemCursorAction);
+            }
         }
     }
     public bool IsItemSelected => SelectedItem != null;
 
+    public CursorActionData SetCursorAction(CursorActionData cursorAction)
+    {
+        int foundIx = _cursors.IndexOf(cursorAction);
+        if (foundIx < 0) { return CurrentAction; }
+        if (!IsItemSelected && cursorAction == ItemCursorAction) { return Next(); }
+        _ix = foundIx;
+        _onChange?.Invoke(CurrentAction);
+        return _cursors[_ix];
+    }
+
     public CursorActionData Next()
     {
         _ix = (_ix + 1) % _cursors.Count;
+        if (!IsItemSelected && CurrentAction == ItemCursorAction) { return Next(); }
         _onChange?.Invoke(CurrentAction);
         return _cursors[_ix];
     }
