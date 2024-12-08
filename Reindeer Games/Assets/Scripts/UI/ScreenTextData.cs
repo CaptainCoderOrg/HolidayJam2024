@@ -20,6 +20,8 @@ public class ScreenTextData : ScriptableObject
         }
     }
 
+    public void ShowDialogueText(DialogueTextData dialogueText) => Text = dialogueText.Message;
+
     private event System.Action<string> _onChange;
     public event System.Action<string> OnChange
     {

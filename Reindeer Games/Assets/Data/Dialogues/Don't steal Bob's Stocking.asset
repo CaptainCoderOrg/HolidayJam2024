@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee95fc2b8ae05bc4f8e41b208c9e41d3, type: 3}
+  m_Name: Don't steal Bob's Stocking
+  m_EditorClassIdentifier: 
+  _message: "You grip Bob's stocking, ready to swipe it like a sneaky elf, but then
+    pause. Bob\u2019s year has been rough\u2014better to let him have his coal and
+    a shred of dignity. You hang the stocking back with a sigh, whispering, \"Merry
+    Christmas, buddy... you\u2019ve earned this.\""

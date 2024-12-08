@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-[CreateAssetMenu(menuName = "Objectives/Objective")]
-public class ObjectiveData : ScriptableObject
+[CreateAssetMenu(menuName = "Game State/Bool")]
+public class BoolData : Predicate
 {
     [field: SerializeField]
     public string Description { get; private set; }
@@ -23,9 +23,10 @@ public class ObjectiveData : ScriptableObject
 
     private bool _isCompleteInitial;
 
+    public override bool IsMet(CursorData cursor) => IsComplete;
 
-    private event System.Action<ObjectiveData> _onChange;
-    public event System.Action<ObjectiveData> OnChange
+    private event System.Action<BoolData> _onChange;
+    public event System.Action<BoolData> OnChange
     {
         add
         {

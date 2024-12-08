@@ -79,7 +79,11 @@ public class InteractableController : MonoBehaviour
         //  ?? cursor.CurrentAction.DefaultMessages.GetRandom();
         // _room.InteractionText.Text = message;
         int count = 0;
-        foreach (CursorEntry entry in Interactions.Where(c => cursor.CurrentAction == c.CursorAction && c.Predicates.All(p => p.IsMet(cursor))))
+        IEnumerable<CursorEntry> triggeredEvents = Interactions
+                                                    .Where(c => cursor.CurrentAction == c.CursorAction)
+                                                    .Where(c => c.Predicates.All(p => p.IsMet(cursor)))
+                                                    .Where(c => !c.NotPredicates.Any(np => np.IsMet(cursor)));
+        foreach (CursorEntry entry in triggeredEvents)
         {
             entry.Event.Invoke();
             count++;
@@ -112,5 +116,6 @@ public class CursorEntry
     [FormerlySerializedAs("Cursor")]
     public CursorActionData CursorAction;
     public List<Predicate> Predicates;
+    public List<Predicate> NotPredicates;
     public UnityEvent Event;
 }
