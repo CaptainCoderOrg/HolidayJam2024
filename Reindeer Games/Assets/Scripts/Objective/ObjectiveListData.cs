@@ -70,6 +70,11 @@ public class ObjectiveListData : ScriptableObject
             Objectives.Clear();
         }
     }
+
+    void OnValidate()
+    {
+        _onChange?.Invoke(Objectives);
+    }
 #endif
 
 }

@@ -14,6 +14,7 @@ public class ObjectiveData : ScriptableObject
 
     private bool _isCompleteInitial;
 
+
     private event System.Action<ObjectiveData> _onChange;
     public event System.Action<ObjectiveData> OnChange
     {
@@ -43,6 +44,10 @@ public class ObjectiveData : ScriptableObject
     }
 
 #if UNITY_EDITOR
+    void OnValidate()
+    {
+        _onChange?.Invoke(this);
+    }
 
     private void EditorEnable()
     {
@@ -63,6 +68,7 @@ public class ObjectiveData : ScriptableObject
         if (change is PlayModeStateChange.ExitingPlayMode)
         {
             IsComplete = _isCompleteInitial;
+            _onChange = null;
         }
     }
 #endif
