@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InventoryController : MonoBehaviour
 {
@@ -7,10 +8,16 @@ public class InventoryController : MonoBehaviour
     public InventoryData Inventory { get; private set; }
 
     private InventoryButton[] _inventoryButtons;
+    [field: SerializeField]
+    public UnityEvent<InventoryItemData> OnItemSelected { get; private set;}
 
     void Awake()
     {
         _inventoryButtons = GetComponentsInChildren<InventoryButton>();
+        foreach (var button in _inventoryButtons)
+        {
+            button.OnItemSelected.AddListener(item => OnItemSelected.Invoke(item));
+        }
     }
 
     void OnEnable()

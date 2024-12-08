@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class InventoryButton : MonoBehaviour
@@ -8,6 +9,8 @@ public class InventoryButton : MonoBehaviour
     public Image Image { get; private set; }
     [field: SerializeField]
     public CursorData Cursor { get; private set; }
+    [field: SerializeField]
+    public UnityEvent<InventoryItemData> OnItemSelected { get; private set; }
     private InventoryItemData _item;
     public InventoryItemData Item 
     { 
@@ -30,6 +33,10 @@ public class InventoryButton : MonoBehaviour
     public void OnClick()
     {
         Cursor.SelectedItem = _item;
+        if (_item != null)
+        {
+            OnItemSelected.Invoke(_item);
+        }
     }
 
     public void ClearItem()
