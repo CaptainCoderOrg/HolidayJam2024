@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4918008829182146569
 RectTransform:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 64, y: 64}
+  m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8810005931746415283
 CanvasRenderer:
@@ -221,5 +221,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d372c4cbfb1cc4fa47232cc7f6b97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <ActionText>k__BackingField: {fileID: 11400000, guid: f80ef64b8f5cf3f46ba3f9e575e73d8d, type: 2}
   <Image>k__BackingField: {fileID: 1687647686858074869}
   <Cursor>k__BackingField: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
+  <OnItemSelected>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []

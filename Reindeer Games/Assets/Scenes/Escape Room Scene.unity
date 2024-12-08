@@ -3461,8 +3461,8 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Interactions.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: You hurl Jeff's gift into the fireplace. The cheerful wrapping paper
-        and ribbon combust with dramatic flair. Inside, a gag gif of a 'World's Okayest
-        Friend' mug melts away.
+        and ribbon combust with dramatic flair. Inside, a  'World's Okayest Friend'
+        mug melts away.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Interactions.Array.data[1].Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -5347,7 +5347,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -5387,11 +5387,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -5409,11 +5410,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 
@@ -6843,7 +6844,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -6883,11 +6884,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -6905,11 +6907,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 
@@ -10077,7 +10079,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -10117,11 +10119,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -10139,11 +10142,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 
@@ -11568,7 +11571,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -11608,11 +11611,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -11630,11 +11634,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 
@@ -12880,7 +12884,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -12920,11 +12924,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -12942,11 +12947,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 
@@ -15485,7 +15490,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -15525,11 +15530,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -15547,11 +15553,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 
@@ -16909,7 +16915,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -16949,11 +16955,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -16971,11 +16978,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 
@@ -17172,6 +17179,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: eaeb0a8e799b1f344bde41e8fc5cf525, type: 3}
+    - target: {fileID: 4922410982074243495, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4922410982074243495, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -18900,7 +18911,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 7738e1993914e6a41b430b08a7521bfe, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: <Name>k__BackingField
@@ -18940,11 +18951,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].Dialogue
-      value: Jingle! Jingle!
+      value: It is one of those lead based paints!
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].Dialogue
-      value: It is one of those lead based paints!
+      value: You take a deep whiff and immediately regret it. It's an unholy cocktail
+        of glitter and lead based paint.
       objectReference: {fileID: 0}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].Dialogue
@@ -18962,11 +18974,11 @@ PrefabInstance:
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[1].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[2].CursorAction
       value: 
-      objectReference: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
     - target: {fileID: 8969678914368781827, guid: a9aadb6b9f57dd146bd179b2e7cc3fe4, type: 3}
       propertyPath: Dialogues.Array.data[3].CursorAction
       value: 

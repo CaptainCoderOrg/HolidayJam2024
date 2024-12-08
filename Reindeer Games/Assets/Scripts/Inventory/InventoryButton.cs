@@ -1,10 +1,12 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryButton : MonoBehaviour
+public class InventoryButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    [field: SerializeField]
+    public ScreenTextData ActionText { get; private set; }
     [field: SerializeField]
     public Image Image { get; private set; }
     [field: SerializeField]
@@ -44,5 +46,20 @@ public class InventoryButton : MonoBehaviour
         Item = null;
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (_item == null)
+        {
+            ActionText.Clear();
+        }
+        else
+        {
+            ActionText.Text = $"{_item.Name}";
+        }
+    }
 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        ActionText.Clear();
+    }
 }
