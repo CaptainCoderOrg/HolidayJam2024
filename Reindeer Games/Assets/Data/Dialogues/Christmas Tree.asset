@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0190664d9226ff4ab6f6c8ccf370e7a, type: 3}
+  m_Name: Christmas Tree
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - CursorAction: {fileID: 11400000, guid: da58fca4871c88345b977ef2fe448a04, type: 2}
+    Predicates: []
+    Dialogue: You step back and examine the Christmas tree, marveling at its symmetry--or
+      lack thereof. A real artist must have created it!
+  - CursorAction: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+    Predicates: []
+    Dialogue: You wrap your arms around the tree in a loving embrace. The tree respons
+      by covering you in sap!
+  - CursorAction: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+    Predicates: []
+    Dialogue: 'As your tongue brushes against the Christmas tree, you get a unique
+      flavor profile: sap, pine needles, and regret.'
+  - CursorAction: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
+    Predicates: []
+    Dialogue: You inhale deeply, and your senses are overwhelmed with the delightful
+      aroma of pine needles, holiday spirit, and just a hint of squirrel.
+  CursorAction: {fileID: 11400000, guid: da58fca4871c88345b977ef2fe448a04, type: 2}
+  Predicates: []
+  Dialogue: You step back and examine the Christmas tree, marveling at its symmetry--or
+    lack thereof. A real artist must have created it!

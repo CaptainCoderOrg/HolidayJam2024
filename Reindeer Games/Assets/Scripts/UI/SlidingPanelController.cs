@@ -2,7 +2,6 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Events;
 
-[CreateAssetMenu]
 public class SlidingPanelController : MonoBehaviour
 {
     private Animator _animator;

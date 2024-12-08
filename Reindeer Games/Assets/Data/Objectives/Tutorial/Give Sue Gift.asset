@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82cdfb2bb827b8b478cb3372312edb21, type: 3}
   m_Name: Give Sue Gift
   m_EditorClassIdentifier: 
-  <Description>k__BackingField: Give Bob Gift
-  <IsComplete>k__BackingField: 0
+  <Description>k__BackingField: Give Sue Gift
+  _isComplete: 0

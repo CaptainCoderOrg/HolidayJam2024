@@ -9,8 +9,17 @@ public class ObjectiveData : ScriptableObject
 {
     [field: SerializeField]
     public string Description { get; private set; }
-    [field: SerializeField]
-    public bool IsComplete { get; set; }
+    [SerializeField]
+    private bool _isComplete = false;
+    public bool IsComplete 
+    { 
+        get => _isComplete;
+        set
+        {
+            _isComplete = value;
+            _onChange.Invoke(this);
+        } 
+    }
 
     private bool _isCompleteInitial;
 

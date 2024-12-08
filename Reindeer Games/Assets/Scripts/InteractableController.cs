@@ -14,6 +14,7 @@ public class InteractableController : MonoBehaviour
     private MouseEvents _mouseEvents;
     [field: SerializeField]
     public string Name { get; private set; }
+    public List<DialogueData> ActionDialogues;
     public List<CursorDialogue> Dialogues;
     public List<CursorEntry> Interactions;
     public List<VerbOverride> VerbOverrides;
@@ -68,7 +69,9 @@ public class InteractableController : MonoBehaviour
 
     public void PerformClick(CursorData cursor)
     {
-        CursorDialogue dialogue = Dialogues.FirstOrDefault(c => cursor.CurrentAction == c.CursorAction && c.Predicates.All(p => p.IsMet(cursor)));
+        CursorDialogue dialogue = ActionDialogues.SelectMany(ad => ad.Dialogues)
+                                                 .Concat(Dialogues)
+                                                 .FirstOrDefault(c => cursor.CurrentAction == c.CursorAction && c.Predicates.All(p => p.IsMet(cursor)));
         if (dialogue != null)
         {
             _room.InteractionText.Text = dialogue.Dialogue;
