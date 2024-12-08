@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 public class SlidingPanelController : MonoBehaviour
@@ -7,6 +8,8 @@ public class SlidingPanelController : MonoBehaviour
     private Animator _animator;
     [field: SerializeField]
     public bool IsShowing { get; private set; }
+    public UnityEvent OnShow;
+    public UnityEvent OnHide;
 
     void Awake()
     {
@@ -34,12 +37,14 @@ public class SlidingPanelController : MonoBehaviour
     {
         _animator.SetTrigger("Show");
         IsShowing = true;
+        OnShow.Invoke();
     }
 
     public void Hide()
     {
         _animator.SetTrigger("Hide");
         IsShowing = false;
+        OnHide.Invoke();
     }
 
 }
