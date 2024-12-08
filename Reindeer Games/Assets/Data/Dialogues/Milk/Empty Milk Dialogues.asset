@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0190664d9226ff4ab6f6c8ccf370e7a, type: 3}
+  m_Name: Empty Milk Dialogues
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - CursorAction: {fileID: 11400000, guid: da58fca4871c88345b977ef2fe448a04, type: 2}
+    Predicates: []
+    Dialogue: 'You stare at the empty glass, its milk-streaked interior a haunting
+      reminder of choices you can never take back. '
+  - CursorAction: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+    Predicates: []
+    Dialogue: The glass is slightly stick as if it is clinging on to your last shred
+      of dignity.
+  - CursorAction: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
+    Predicates: []
+    Dialogue: 'You take a whiff of the empty glass, and the ghost of spoiled milk
+      lingers. '
+  - CursorAction: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+    Predicates: []
+    Dialogue: "You lick the empty glass, savoring the faint, tragic aftertaste of
+      spoiled milk. It\u2019s official\u2014Santa\u2019s desperation knows no bounds.\n"

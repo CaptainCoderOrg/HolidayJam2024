@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82cdfb2bb827b8b478cb3372312edb21, type: 3}
-  m_Name: Drink Milk
+  m_Script: {fileID: 11500000, guid: 095011b9f7bd240fea5efcbbbb801f2b, type: 3}
+  m_Name: Drink
   m_EditorClassIdentifier: 
-  <Description>k__BackingField: Drink Milk
-  <IsComplete>k__BackingField: 0
+  Cursor: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+  ItemMatch: []
+  Verb: Drink
+  Proposition: 

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82cdfb2bb827b8b478cb3372312edb21, type: 3}
-  m_Name: Give Bob Gift
+  m_Name: Eat Cookies (Objective)
   m_EditorClassIdentifier: 
-  <Description>k__BackingField: Give Bob Gift
+  <Description>k__BackingField: Eat Cookies
   <IsComplete>k__BackingField: 0
