@@ -62,7 +62,7 @@ public class ObjectiveListData : ScriptableObject
         if (change is PlayModeStateChange.EnteredPlayMode)
         {
             Objectives = StartingObjectives.ToList();
-            _onChange.Invoke(Objectives);
+            _onChange?.Invoke(Objectives);
         }
         if (change is PlayModeStateChange.ExitingPlayMode)
         {

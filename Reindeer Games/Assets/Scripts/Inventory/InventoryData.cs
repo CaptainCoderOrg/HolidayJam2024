@@ -62,7 +62,7 @@ public class InventoryData : ScriptableObject
         if (change is PlayModeStateChange.EnteredPlayMode)
         {
             Items = StartingItems.ToList();
-            _onItemsModified.Invoke(Items);
+            _onItemsModified?.Invoke(Items);
         }
         if (change is PlayModeStateChange.ExitingPlayMode)
         {
