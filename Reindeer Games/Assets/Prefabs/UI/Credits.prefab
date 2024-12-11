@@ -316,7 +316,7 @@ MonoBehaviour:
     a point and click adventure game engine!\n\nThank you to iHeartFunnyBoys for
     hosting this game jam to give me an excuse to create this prototype.\n\nFonts:\n
     * Feltful by Jess Latham\n * Bayformance by Pixel Saga\n * Winter Minie by Khurasan
-    Studio"
+    Studio\n\nMusic:\n * First Snow by Tsorthan Grove"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b01153db956fd14ebac9900ee85881c, type: 2}
   m_sharedMaterial: {fileID: 5108998317243689922, guid: 4b01153db956fd14ebac9900ee85881c, type: 2}
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.45
+  m_fontSize: 19.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
