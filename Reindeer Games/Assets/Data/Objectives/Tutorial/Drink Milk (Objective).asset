@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Drink Milk (Objective)
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Drink Milk
-  <IsComplete>k__BackingField: 0
+  _isComplete: 0

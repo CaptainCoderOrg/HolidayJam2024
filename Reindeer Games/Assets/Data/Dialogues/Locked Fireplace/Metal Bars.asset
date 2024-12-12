@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0190664d9226ff4ab6f6c8ccf370e7a, type: 3}
+  m_Name: Metal Bars
+  m_EditorClassIdentifier: 
+  Dialogues:
+  - CursorAction: {fileID: 11400000, guid: 711b433bfdd24fc4c89725b5308a821d, type: 2}
+    Predicates: []
+    Dialogue: "You lean in and lick the metal bars. They taste exactly like you\u2019d
+      expect: cold, metallic, and seasoned with a hint of regret. Great job, Santa."
+  - CursorAction: {fileID: 11400000, guid: 7a488f800956e244c95c0b55e9302578, type: 2}
+    Predicates: []
+    Dialogue: "You lean in to sniff the metal bars, and the cold, metallic scent
+      fills your nose. There\u2019s also a faint hint of chimney soot\u2014just enough
+      to remind you of how stuck you are."
+  - CursorAction: {fileID: 11400000, guid: da58fca4871c88345b977ef2fe448a04, type: 2}
+    Predicates: []
+    Dialogue: The bars seem sturdy, unmovable, and quite proud of ruining your exit
+      strategy.
+  - CursorAction: {fileID: 11400000, guid: e3fb0911ffa035f489b929ab83ed8c23, type: 2}
+    Predicates: []
+    Dialogue: "With a grunt, you attempt to pry the bars apart, but they don\u2019t
+      move. Guess lifting presents isn\u2019t exactly strength training."

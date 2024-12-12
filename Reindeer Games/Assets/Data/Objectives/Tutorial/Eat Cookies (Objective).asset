@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Eat Cookies (Objective)
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Eat Cookies
-  <IsComplete>k__BackingField: 0
+  _isComplete: 0

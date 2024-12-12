@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Give Bob Gift (Objective)
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Give Bob Gift
-  <IsComplete>k__BackingField: 0
+  _isComplete: 0
